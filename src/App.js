@@ -1,19 +1,14 @@
 import React from 'react';
 import { Switch, Route , Redirect} from 'react-router-dom'
-import { Paper, Grid } from '@material-ui/core';
-
+import {  Grid } from '@material-ui/core';
 import Pokedex from './components/pokedex';
 import Pokemon from './components/pokemon';
 import NotFound from "./components/notfound";
-import Header from './components/header';
+
 function App() {
   return (
   <>
   <Grid container direction='column' >
-<Grid item>
-  <Header/>
-</Grid>
-
 <Grid item container >
 <Grid item xs={false} sm={2}/>
 <Grid item xs={12} sm={8} >
